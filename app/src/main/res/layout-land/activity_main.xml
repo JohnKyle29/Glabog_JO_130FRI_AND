@@ -5,116 +5,104 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".MainActivity">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:id="@+id/parent1"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_height="wrap_content">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:id="@+id/constraint1"
-
         android:layout_height="wrap_content"
+        android:id="@+id/constraint1"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        >
+        android:layout_alignParentEnd="true">
+
         <TextView
             android:id="@+id/display"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+
             android:background="#000000"
             android:gravity="end|bottom"
             android:text="0"
             android:textColor="#FFFFFF"
-            android:textSize="60sp"
+            android:textSize="50sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     <LinearLayout
         android:id="@+id/buttonsContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/constraint1"
-        android:layout_alignParentEnd="true"
         android:layout_marginHorizontal="10dp"
         android:orientation="vertical">
+
         <!-- First row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:gravity="center"
-
-            android:orientation="horizontal">
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/btn_clear"
                 android:layout_width="0dp"
-                android:layout_height="80dp"
+                android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="C"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_plus_minus"
                 android:layout_width="0dp"
-                android:layout_height="80dp"
+                android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="+/-"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_percent"
                 android:layout_width="0dp"
-                android:layout_height="80dp"
+                android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="%"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_divide"
                 android:layout_width="0dp"
-                android:layout_height="80dp"
+                android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-
                 android:background="@drawable/button_operator_background"
                 android:text="÷"
                 android:textColor="@color/white"
-                android:textSize="40sp" />
+                android:textSize="24sp" />
         </LinearLayout>
 
-        <!-- Second row using LinearLayout -->
+        <!-- Second row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/btn_7"
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
                 android:text="7"
@@ -126,7 +114,6 @@
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
                 android:text="8"
@@ -138,7 +125,6 @@
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
-
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
                 android:text="9"
@@ -154,17 +140,16 @@
                 android:background="@drawable/button_operator_background"
                 android:text="×"
                 android:textColor="@color/white"
-                android:textSize="40sp" />
+                android:textSize="24sp" />
         </LinearLayout>
 
-
-        <!-- Remaining rows using LinearLayouts -->
+        <!-- Third row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/btn_4"
@@ -173,7 +158,6 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
-
                 android:text="4"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp" />
@@ -185,7 +169,6 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
-
                 android:text="5"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp" />
@@ -197,7 +180,6 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
-
                 android:text="6"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp" />
@@ -210,18 +192,17 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_operator_background"
                 android:text="-"
-                android:textAlignment="center"
-
                 android:textColor="@color/white"
-                android:textSize="40sp" />
+                android:textSize="24sp" />
         </LinearLayout>
 
+        <!-- Fourth row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/btn_1"
@@ -241,8 +222,6 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
-
-
                 android:text="2"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp" />
@@ -254,7 +233,6 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
-
                 android:text="3"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp" />
@@ -268,15 +246,16 @@
                 android:background="@drawable/button_operator_background"
                 android:text="+"
                 android:textColor="@color/white"
-                android:textSize="40sp" />
+                android:textSize="24sp" />
         </LinearLayout>
 
+        <!-- Fifth row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/btn_0"
@@ -285,7 +264,6 @@
                 android:layout_margin="5dp"
                 android:layout_weight="2"
                 android:background="@drawable/number_background"
-
                 android:text="0"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp" />
@@ -297,7 +275,6 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/number_background"
-
                 android:text="."
                 android:textColor="#FFFFFF"
                 android:textSize="24sp" />
@@ -309,12 +286,10 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_operator_background"
-
                 android:text="="
                 android:textColor="#FFFFFF"
-                android:textSize="40sp" />
+                android:textSize="24sp" />
         </LinearLayout>
-    </LinearLayout>
-    </RelativeLayout>
-    </RelativeLayout>
 
+    </LinearLayout>
+</RelativeLayout>
