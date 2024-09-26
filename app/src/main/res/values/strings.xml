@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message">If you click the negative it will exit the application and if you click the positive it will go to the next fragment</string>
+    <string name="title">Menu</string>
+    <string name="message1">Practice coding</string>
+    <string name="nextFragment">This is the next Fragment Page</string>
+    <string name="title1">Choose negative or positive</string>
+    <string name="nextFragment1">I enjoy coding but sometimes I do not</string>
+</resources>
