@@ -2,18 +2,27 @@
     <item
         android:id="@+id/first_option"
         android:title="Go to Another Fragment"
-        android:icon="@drawable/ic_next"
-         />
+        android:icon="@drawable/ic_next" />
 
     <item
         android:id="@+id/second_option"
         android:title="Call DialogFragment"
-        android:icon="@drawable/ic_sec_next"
-        />
+        android:icon="@drawable/ic_sec_next" />
+
 
     <item
         android:id="@+id/third_option"
-        android:title="Exit App "
-        android:icon="@drawable/ic_back"
-         />
+        android:title="More Options"
+        android:icon="@drawable/ic_sub_menu">
+        <menu>
+            <item
+                android:id="@+id/exit_app"
+                android:title="Exit App"
+                android:icon="@drawable/ic_back" />
+            <item
+                android:id="@+id/cancel"
+                android:title="Cancel"
+                android:icon="@drawable/ic_cancel" />
+        </menu>
+    </item>
 </menu>

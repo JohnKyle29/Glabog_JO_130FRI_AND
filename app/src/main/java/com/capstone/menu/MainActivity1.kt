@@ -48,7 +48,7 @@ class MainActivity1 : AppCompatActivity() {
             e.printStackTrace()
         }
 
-        // Set item click listener to handle menu item clicks
+        // Set item click listener to handle menu item and sub-menu item clicks
         popupMenu.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 R.id.first_option -> {
@@ -61,9 +61,14 @@ class MainActivity1 : AppCompatActivity() {
                     showDialogFragment()
                     true
                 }
-                R.id.third_option -> {
-                    // When third_option is clicked, exit the application
+                R.id.exit_app -> {
+                    // When exit_app is clicked, exit the application
                     finishAffinity()
+                    true
+                }
+                R.id.cancel -> {
+                    // When cancel is clicked, show a toast and do nothing
+                    Toast.makeText(this, "Cancelled", Toast.LENGTH_SHORT).show()
                     true
                 }
                 else -> false
