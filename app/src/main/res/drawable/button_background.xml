@@ -1,0 +1,15 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/darker_gray" />
+
+    <!-- Setting corners to 50% of the size will make it a circle -->
+    <corners android:radius="500dp" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@android:color/darker_gray" />
+
+    <!-- Optional: set size for a specific dimension (adjust as needed) -->
+    <size
+        android:width="100dp"
+        android:height="100dp" />
+</shape>
